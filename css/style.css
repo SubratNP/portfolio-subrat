@@ -1,77 +1,121 @@
 /* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #222;
+    background: #0b0f16; /*  dark blue */
+    color: #dbe8ff;      /* soft blue  */
+    line-height: 1.5;
 }
 
-/* Header + Nav */
+/* Header */
 header {
-    background: #333;
-    color: #fff;
+    background: #0e1624;
+    color: #4da6ff; /* neon blue */
     padding: 20px;
     text-align: center;
+    border-bottom: 1px solid #1e2b40;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 8px;
+    color: #79b7ff;
+    margin: 0 10px;
     text-decoration: none;
 }
 
-nav a:hover { color: #ff0; }
+nav a:hover {
+    color: #b3d7ff;
+}
 
 /* Sections */
 section {
-    padding: 25px;
     max-width: 800px;
-    margin: auto;
-}
-
-/* Project image */
-.project-img {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px 0;
+    margin: 25px auto;
+    background: #101827; /* card-like dark blue */
+    padding: 20px;
+    border: 1px solid #1f2e45;
     border-radius: 5px;
 }
 
-/* Form */
-form, input, textarea {
-    width: 100%;
+h2 {
+    color: #5db0ff;
+    margin-bottom: 10px;
 }
 
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #dbe8ff;
+}
+
+th, td {
+    border: 1px solid #1f2e45;
+    padding: 10px;
+}
+
+th {
+    background: #182235;
+}
+
+/* Images */
+.project-img {
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #1f2e45;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Form */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 input, textarea {
     padding: 10px;
-    border: 1px solid #aaa;
+    background: #0e1624;
+    border: 1px solid #1f2e45;
+    color: #dbe8ff;
     border-radius: 4px;
 }
 
-/* Button */
 button {
     padding: 10px;
-    background: #333;
-    color: #fff;
-    border: 0;
+    background: #2563eb;
+    color: white;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover { background: #555; }
+button:hover {
+    background: #1e4fb8;
+}
 
 /* Footer */
 footer {
+    margin-top: 20px;
     text-align: center;
     padding: 15px;
-    background: #333;
-    color: #fff;
-    margin-top: 20px;
+    background: #0e1624;
+    border-top: 1px solid #1e2b40;
+    color: #79b7ff;
+}
+
+/* Lists */
+ul {
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 6px;
 }
