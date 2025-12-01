@@ -8,8 +8,21 @@
 </head>
 
 <body>
+    <div id="scroll-progress"></div>
 
-    <header>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+    &#9776; <!-- Hamburger icon -->
+</button>
+
+
+    <!-- Hero Section with Video Background -->
+   <header class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <section class="hero-overlay">
         <h1>Subrat Regmi</h1>
         <nav>
             <a href="#about">About</a>
@@ -19,7 +32,10 @@
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>
+    </section>
+</header>
+
+
 
     <section id="about">
         <h2>About Me</h2>
@@ -93,7 +109,7 @@
     <section id="portfolio-project">
         <h2>Portfolio Project</h2>
         <img src="images/project1.png" alt="Project Screenshot" class="project-img">
-        <p>This is my first project  a personal portfolio website built using HTML, CSS, and Git.</p>
+        <p>This is my first project – a personal portfolio website built using HTML, CSS, and Git.</p>
     </section>
 
     <section id="contact">
@@ -115,6 +131,7 @@
     <footer>
         © 2025 Subrat Regmi
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
